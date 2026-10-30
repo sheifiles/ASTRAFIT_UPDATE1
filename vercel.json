@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/export.xlsx",
+      "destination": "/api/export"
+    }
+  ],
+  "functions": {
+    "api/report.ts": {
+      "includeFiles": "{server/report.js,node_modules/pdfkit/**}"
+    }
+  }
+}
